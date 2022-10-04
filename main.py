@@ -1,17 +1,16 @@
-numero = 0
+print('Programinha de contole de festa 2.0')
+print('########################################')
+numero_de_convidados = input('Coloque um numero de convidados: ')
+lista_de_convidados = []
 
-while True:
-    print(numero)
-    if numero == 5:
-        break
-    numero += 1
+i = 1
+while i <= int(numero_de_convidados) :
+    nome_do_convidado = input('Coloque um nome do convidado #'+ str(i) +': ')
+    lista_de_convidados.append(nome_do_convidado)
+    i += 1
 
-pessoa1 = input('Seu nome convidado1: ')
-pessoa2 = input('seu nome convidado2: ')
-pessoa3 = input('Seu nome convidado3: ')
-pessoa4 = input('Seu nome convidado4: ')
-pessoa5 = input('Seu nome convidado5: ')
+print('serao', numero_de_convidados, 'convidados')
+print('LISTA DE CONVIDADOS')
 
-lista_de_pessoas = [pessoa1, pessoa2, pessoa3, pessoa4, pessoa5]
-
-print('Os convidados sao:', lista_de_pessoas)
+for convidado in lista_de_convidados:
+    print(convidado)
